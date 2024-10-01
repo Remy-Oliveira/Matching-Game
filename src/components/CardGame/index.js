@@ -1,16 +1,30 @@
 import "./style.css";
 
 const CardGame = () => {
-  let cards = "";
-  let j = 6;
-  
-  for (let i = 0; i < j; i++) {
-    cards += ` <article class="card-game"> <img src = "images/alura-pixel.png" alt= "Logo da Alura!"> </article>`;
-  }
+  return `<article class="card-game" onclick = "virar(this)"> <img src = "images/alura-pixel.png" alt= "Logo da Alura!"> </article>`;
+}
 
-  return cards;
+const virar = (element) => {
+  element.classList.toggle("card-virar");
+
+  if (element.classList.contains("card-virar")) {
+    element.querySelector("img").src = "images/JS.png";
+  } else {
+    element.querySelector("img").src = "images/alura-pixel.png";
+  }
 };
+
+window.virar = virar;
 
 export default CardGame;
 
-// export {CardGame};
+/*let cards = "";
+  let j = 6;
+
+  let card = `<article class="card-game" onclick = "virar(this)"> <img src = "images/alura-pixel.png" alt= "Logo da Alura!"> </article>`;
+
+  for (let i = 0; i < j; i++) {
+    cards += `${card}`;
+  }
+
+  return cards;*/
