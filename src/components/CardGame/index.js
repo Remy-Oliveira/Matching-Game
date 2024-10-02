@@ -2,7 +2,7 @@ import "./style.css";
 
 const CardGame = () => {
   return `<article class="card-game" onclick = "virar(this)"> <img src = "images/alura-pixel.png" alt= "Logo da Alura!"> </article>`;
-}
+};
 
 const virar = (element) => {
   element.classList.toggle("card-virar");
