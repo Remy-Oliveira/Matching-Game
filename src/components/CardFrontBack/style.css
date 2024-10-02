@@ -5,11 +5,11 @@
   height: var(--height);
   width: var(--width);
   transform-style: preserve-3d;
-  transition: transform .7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 .card-front-back.-active {
-    transform: rotateY('180deg');
+  transform: rotateY("180deg");
 }
 
 .card-front-back > .card {
@@ -18,9 +18,9 @@
 }
 
 .card-front-back > .card.-back {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card-front-back > .card.-back .card-game {
-    background-color: var(--feiry-rose);
+  background-color: var(--color-feiry-rose);
 }
