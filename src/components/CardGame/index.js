@@ -1,14 +1,14 @@
 import "./style.css";
 
-const CardGame = () => {
-  return `<article class="card-game" onclick = "virar(this)"> <img src = "images/alura-pixel.png" alt= "Logo da Alura!"> </article>`;
+const CardGame = (icon = "alura-pixel", alt = "Logo da Alura") => {
+  return `<article class="card-game" onclick = "virar(this)"> <img src = "images/${icon}.png" alt= "${alt}"> </article>`;
 };
 
 const virar = (element) => {
   element.classList.toggle("card-virar");
 
   if (element.classList.contains("card-virar")) {
-    element.querySelector("img").src = "images/JS.png";
+    element.querySelector("img").src = "images/javascript.png";
   } else {
     element.querySelector("img").src = "images/alura-pixel.png";
   }
