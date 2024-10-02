@@ -1,5 +1,5 @@
 import "./style.css";
 
-const PlayerName = (player) => `<p>${player}</p>`;
+const PlayerName = (player) => `<p class="player-name">${player}</p>`;
 
 export default PlayerName;
