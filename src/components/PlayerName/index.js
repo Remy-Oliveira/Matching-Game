@@ -1,9 +1,7 @@
 import "./style.css";
-import PlayerScore from "../PlayerScore";
 
 const PlayerName = (player) => {
-   const $htmlPlayerScore = PlayerScore()
-  return `<p class="player-name">${player} ${$htmlPlayerScore}</p>`;
+  return `<p class="player-name">${player}</p>`;
 };
 
 export default PlayerName;
