@@ -6,7 +6,7 @@
   width: var(--width);
   transform-style: preserve-3d;
   transition: transform 0.7s ease-in-out;
-
+cursor: pointer;
 }
 
 .card-front-back.-active {
@@ -23,5 +23,5 @@
 }
 
 .card-front-back > .card.-back .card-game {
-  background-color: var(--color-feiry-rose);
+  background-color: var(--color-fiery-rose);
 }
