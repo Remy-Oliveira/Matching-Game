@@ -1,6 +1,8 @@
-const VsPlayer = (content = "vs") => {
-return `
-<span class="vs-player">${content}</span>`
-}
+import './style.css'
 
-export default VsPlayer
+const VsPlayer = (content = "vs") => {
+  return `
+<span class="vs-player">${content}</span>`;
+};
+
+export default VsPlayer;
