@@ -5,8 +5,8 @@ import VsPlayer from "../../components/VsPlayer";
 import "./style.css";
 
 const ScoreBoard = () => {
-  return `<header class="score-board"> 
-  ${ArrowDown()} 
+  return `<header class='score-board'> 
+  ${ArrowDown(2)} 
   ${PlayerName("Player1")} 
   ${PlayerScore(2)}
   ${VsPlayer()}
